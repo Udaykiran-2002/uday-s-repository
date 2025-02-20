@@ -1,0 +1,136 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: blue;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#search-btn, #refresh-btn {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#search-btn {
+  background: #ff6f61;
+  border-radius: 0 5px 5px 0;
+}
+
+#search-btn:hover {
+  background: #ff3b2f;
+}
+
+#refresh-btn {
+  background: #4caf50;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+#refresh-btn:hover {
+  background: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+#error {
+  color: #ff6f61;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+#weather-info {
+  margin-top: 20px;
+}
+
+#city-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+#current-weather {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#current-weather p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+#forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forecast-item span {
+  font-size: 1rem;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(1) hue-rotate(60deg); /* Changes the icon color to yellow */
+}
